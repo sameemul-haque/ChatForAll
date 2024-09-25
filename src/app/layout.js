@@ -5,22 +5,28 @@ import { Providers } from "./components/Providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
+  applicationName: 'ChatForAll',
   title: "ChatForAll",
   description:
-    "A simple realtime chat applcation without authentication created using Next.js and Firebase",
+    "A simple realtime chat application without authentication created using Next.js and Firebase",
   generator: "Next.js",
   manifest: "/manifest.json",
-  themeColor: [{ media: "(prefers-color-scheme: dark)", color: "#fff" }],
   authors: [
     { name: "Sameemul Haque" },
     {
       name: "Sameemul Haque",
-      url: "https://sameemul-haque.github.io/",
+      url: "https://sameem.dev/",
     },
   ],
-  viewport:
-  "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
 };
+
+export const viewport = {
+  themeColor: 'black',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+}
 
 export default function RootLayout({ children }) {
   return (

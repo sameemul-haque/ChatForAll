@@ -18,14 +18,10 @@ const Message = ({ message }) => {
       {message.createdAt && (
         <div className="bg-[#e6e9ef] dark:bg-[#1e1e2e] my-2 p-4 flex flex-col rounded-2xl w-full md:w-3/4 lg:w:2/3 xl:w-3/5 2xl:w-1/2">
           <div className="flex flex-row">
-            <Image
-              className="w-8 h-8 rounded-full mr-2.5"
-              width={32}
-              height={32}
-              src="/avatar.png"
-              alt="user avatar"
-            />
-            <div className="flex items-center break-all whitespace-pre-wrap">
+            <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M83.59 77.906A43.716 43.716 0 1 0 6.25 50a43.43 43.43 0 0 0 10.16 27.906l-.063.052c.219.264.469.49.695.748.28.323.582.625.875.94.875.948 1.773 1.86 2.718 2.718.286.26.583.504.875.756 1 .862 2.027 1.678 3.094 2.441.138.098.26.217.399.315v-.04a43.44 43.44 0 0 0 50 0v.039c.139-.098.26-.217.399-.314a44 44 0 0 0 3.093-2.442c.293-.25.59-.496.875-.755a44 44 0 0 0 2.72-2.719c.29-.314.59-.616.874-.94.225-.258.476-.483.695-.748zM50 25a14.062 14.062 0 1 1 0 28.125A14.062 14.062 0 0 1 50 25M25.022 77.906A15.61 15.61 0 0 1 40.625 62.5h18.75a15.61 15.61 0 0 1 15.603 15.406 37.313 37.313 0 0 1-49.956 0" fill="#B4BEFE" />
+            </svg>
+            <div className="ml-2.5 flex items-center break-all whitespace-pre-wrap">
               {message.text}
             </div>
           </div>
