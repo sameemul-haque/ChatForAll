@@ -2,18 +2,39 @@
   "hosting": [
     {
       "target": "chat4all",
-      "public": "out",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
     },
     {
       "target": "chatforall",
-      "public": "out",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
     },
     {
       "target": "c4all",
-      "public": "out",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
     }
   ]
 }
